@@ -5,7 +5,7 @@
   --accent: #c31274;
   --line: rgba(195, 18, 116, 0.14);
   --radius: 26px;
-  --max: 980px;
+  --max: 1480px;
 }
 
 *,
@@ -111,7 +111,17 @@ main,
 .site-footer {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 4.6rem 1.5rem;
+  padding: 4.6rem 5vw;
+}
+
+.lede,
+.section-head p,
+.work p,
+.card p {
+  color: var(--muted);
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero { padding-top: 5.6rem; }
@@ -165,22 +175,24 @@ h3 {
   margin: .15rem 0 .45rem;
 }
 
-.lede,
-.section-head p,
-.work p,
-.card p {
+.lede {
   color: var(--muted);
-  max-width: 28rem;
+  max-width: 38rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-.lede {
-  font-size: 1.08rem;
   font-style: italic;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.35rem;
   line-height: 1.55;
+}
+
+.section-head p,
+.work p,
+.card p {
+  color: var(--muted);
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-actions {
@@ -227,6 +239,11 @@ h3 {
 }
 .grid-2, .work-grid { grid-template-columns: 1fr 1fr; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+@media (min-width: 1100px) {
+  .work-grid { grid-template-columns: repeat(4, 1fr); }
+  .work img { height: 280px; }
+}
 
 .card,
 .work {
