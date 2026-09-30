@@ -46,7 +46,10 @@ function scene() {
   const y = window.scrollY;
   const max = document.documentElement.scrollHeight - window.innerHeight;
   if (bar && max > 0) bar.style.width = `${(y / max) * 100}%`;
-  if (photo && motionOk) photo.style.transform = `translate3d(0, ${y * 0.18}px, 0)`;
+  if (photo && motionOk) {
+    const shift = Math.max(-60, Math.min(60, y * 0.06));
+    photo.style.transform = `translate3d(0, ${-shift}px, 0)`;
+  }
 }
 window.addEventListener("scroll", scene, { passive: true });
 scene();
