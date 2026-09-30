@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Lunara · Szempillázás</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -21,23 +21,43 @@
     <a href="kapcsolat.html">Időpont</a>
   </nav>
   <a class="btn btn-small" href="kapcsolat.html">Időpont</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Menü"><span></span><span></span><span></span></button>
 </header>
 <main>
 <section class="hero">
-  <p class="eyebrow">Szempillastúdió</p>
-  <h1>Tekintet,<br /><em>ami beszél.</em></h1>
-  <p class="lede">Klasszikus és volume szempillahosszabbítás, lifting, ápolás. Finom munka, tiszta stúdió.</p>
+  <p class="eyebrow">női stúdió</p>
+  <h1>Finom munka.<br /><em>Kedves kéz.</em></h1>
+  <p class="lede">Itt nem sietünk. Tiszta eszközök, nyugodt beszélgetés, és egy szempilla, ami hozzád simul.</p>
   <div class="hero-actions">
-    <a class="btn btn-primary" href="kapcsolat.html">Időpontot kérek</a>
+    <a class="btn btn-primary" href="kapcsolat.html">Szeretnék időpontot</a>
     <a class="btn btn-ghost" href="szolgaltatasok.html">Kezelések</a>
   </div>
-  <dl class="stats"><div><dt>Kezelés</dt><dd>90–150 p</dd></div><div><dt>Tartósság</dt><dd>3–5 hét</dd></div><div><dt>Elégedettség</dt><dd>99%</dd></div></dl>
 </section>
-<section class="section"><div class="section-head"><p class="eyebrow">Rólam</p><h2>Stylist, aki a tekintetedre figyel</h2></div><div class="grid-2"><article class="card"><h3>Szakma</h3><p>Klasszikus, volume, mega volume, lifting.</p></article><article class="card"><h3>Ígéret</h3><p>Higiénia, kíméletes ragasztás, őszinte tanács.</p></article></div></section>
-<section class="section"><div class="section-head"><p class="eyebrow">Kezelések</p><h2>A szetted a szemformádhoz igazodik</h2></div><div class="grid-3"><article class="card feature"><span class="icon">01</span><h3>Klasszikus</h3><p>Egy saját pillára egy szál. Természetes hatás.</p></article><article class="card feature featured"><span class="icon">02</span><h3>Volume</h3><p>2–5D legyezők. Dús, viselhető.</p></article><article class="card feature"><span class="icon">03</span><h3>Lifting</h3><p>Saját pilla emelése és festése.</p></article></div></section>
-<section class="section"><div class="section-head"><p class="eyebrow">Időpont</p><h2>Foglalj kezelést</h2></div><form class="contact-form" id="themeForm" action="#"><label>Név<input name="name" /></label><label>Telefon<input name="phone" /></label><label class="full">Milyen kezelést kérsz?<textarea name="message" rows="5"></textarea></label><button class="btn btn-primary" type="submit">Időpontot kérek</button><p class="form-note" id="formNote" hidden>Megkaptam, írok időpontot.</p></form></section>
+<section class="section">
+  <div class="section-head"><p class="eyebrow">Rólam</p><h2>Egy nő, aki figyel rád</h2><p>Megkérdezem, hogyan érzed magad a tükörben. Aztán ahhoz igazítom a munkát.</p></div>
+  <div class="grid-2">
+    <article class="card"><h3>Tiszta munka</h3><p>Egyszer használatos eszközök, friss ragasztó, rendezett tálca. Ezt látnod kell, mielőtt lehunyod a szemed.</p></article>
+    <article class="card"><h3>Kedvesség</h3><p>Ha fáradt vagy, ha bizonytalan a forma: lassítunk. Őszintén szólok, ha a pilládnak pihenő kell.</p></article>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head"><p class="eyebrow">Kezelések</p><h2>Ami hozzád illik</h2></div>
+  <div class="grid-3">
+    <article class="card feature"><span class="icon">01</span><h3>Klasszikus</h3><p>Finom, nappali tekintet. Egy szál a saját pilládra.</p></article>
+    <article class="card feature featured"><span class="icon">02</span><h3>Volume</h3><p>Puha dúsítás, nem maszk. Viselhető, nőies.</p></article>
+    <article class="card feature"><span class="icon">03</span><h3>Lifting</h3><p>A saját pillád emelése és festése. Könnyed napokra.</p></article>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head"><p class="eyebrow">Vendég</p><h2>Nyugodtan gyere</h2><p>Tea, tiszta törölköző, csend. Ha fájna, megállunk.</p></div>
+  <form class="contact-form" id="themeForm" action="#">
+    <label>Neved<input name="name" /></label>
+    <label>Telefon<input name="phone" /></label>
+    <label class="full">Miben segíthetek?<textarea name="message" rows="5" placeholder="Írd le nyugodtan, mit szeretnél."></textarea></label>
+    <button class="btn btn-primary" type="submit">Kérek időpontot</button>
+    <p class="form-note" id="formNote" hidden>Örülök, hogy írtál. Hamarosan jelentkezem.</p>
+  </form>
+</section>
 </main>
-<footer class="site-footer"><p>© <span id="year"></span> Lunara · Szempillázás</p></footer>
+<footer class="site-footer"><p>© <span id="year"></span> Lunara · Tiszta munka, kedves kéz</p></footer>
 <script src="script.js"></script>
 </body></html>
