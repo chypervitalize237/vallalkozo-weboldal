@@ -4,17 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vállalkozói weboldal</title>
-  <meta name="description" content="Egyéni vállalkozó bemutatkozó oldala. A konkrét szakmát később töltjük fel." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-mesh" aria-hidden="true"></div>
-  <div class="bg-glow" aria-hidden="true"></div>
-  <div class="bg-glow glow-2" aria-hidden="true"></div>
-  <div class="bg-grain" aria-hidden="true"></div>
+  <div class="space" aria-hidden="true">
+    <div class="land-sky" data-depth="0.06" data-scale="0.04"></div>
+    <div class="land-far" data-depth="0.18" data-scale="0.08">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=70" alt="" />
+    </div>
+    <div class="land-glow o1" data-depth="0.24" data-scale="0.05"></div>
+    <div class="land-mid" data-depth="0.42" data-scale="0.12">
+      <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1800&q=70" alt="" />
+    </div>
+    <div class="land-mist" data-depth="0.36" data-scale="0.06"></div>
+    <div class="land-glow o2" data-depth="0.5" data-scale="0.1"></div>
+    <div class="land-ridge" data-depth="0.72" data-scale="0.16"></div>
+    <div class="land-birds" data-depth="0.62" data-scale="0.04"></div>
+    <div class="land-dust" data-depth="0.85" data-scale="0.2"></div>
+    <div class="land-near" data-depth="1.05" data-scale="0.22"></div>
+    <div class="land-vignette"></div>
+  </div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
   <header class="site-header">
     <a class="logo" href="#eleje"><span class="logo-mark">◆</span><span class="logo-text">Studio</span></a>
     <nav class="nav" id="nav">
@@ -31,7 +45,7 @@
     <section class="hero">
       <p class="eyebrow">Egyéni vállalkozó</p>
       <h1>Tiszta ajánlat.<br /><em>Mérhető eredmény.</em></h1>
-      <p class="lede">Üzleti bemutatkozó oldal vállalkozóknak. A név, a szakma és a konkrét szolgáltatás később kerül ide.</p>
+      <p class="lede">Üzleti bemutatkozó oldal vállalkozóknak. A téma később kerül ide.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#kapcsolat">Kérek egy ajánlatot</a>
         <a class="btn btn-ghost" href="#szolgaltatasok">Szolgáltatások</a>
@@ -39,29 +53,27 @@
       <dl class="stats"><div><dt>Ügyfelek</dt><dd>50+</dd></div><div><dt>Év tapasztalat</dt><dd>8</dd></div><div><dt>Elégedettség</dt><dd>98%</dd></div></dl>
     </section>
     <section class="section" id="rolam">
-      <div class="section-head"><p class="eyebrow">Rólam</p><h2>Egy vállalkozó, aki a saját nevével áll ki</h2><p>Itt lesz a bemutatkozás. A szakmát később írjuk be.</p></div>
-      <div class="grid-2"><article class="card"><h3>Pozíció</h3><p>Helyőrző: tanácsadó, alkotó, szakértő vagy szolgáltató.</p></article><article class="card"><h3>Ígéret</h3><p>Világos folyamat, határidő, átlátható díjazás.</p></article></div>
+      <div class="section-head"><p class="eyebrow">Rólam</p><h2>Egy vállalkozó, aki a saját nevével áll ki</h2></div>
+      <div class="grid-2"><article class="card"><h3>Pozíció</h3><p>Helyőrző szöveg a szakmához.</p></article><article class="card"><h3>Ígéret</h3><p>Világos folyamat és határidő.</p></article></div>
     </section>
     <section class="section" id="szolgaltatasok">
-      <div class="section-head"><p class="eyebrow">Szolgáltatások</p><h2>Három ajánlat</h2><p>Belépő, főcsomag, prémium.</p></div>
-      <div class="grid-3"><article class="card feature"><span class="icon">01</span><h3>Konzultáció</h3><p>Rövid, fókuszált beszélgetés.</p></article><article class="card feature featured"><span class="icon">02</span><h3>Főcsomag</h3><p>Tervezés, kivitelezés, átadás.</p></article><article class="card feature"><span class="icon">03</span><h3>Megtartás</h3><p>Havi támogatás és utókövetés.</p></article></div>
+      <div class="section-head"><p class="eyebrow">Szolgáltatások</p><h2>Három ajánlat</h2></div>
+      <div class="grid-3"><article class="card feature"><span class="icon">01</span><h3>Konzultáció</h3><p>Rövid beszélgetés.</p></article><article class="card feature featured"><span class="icon">02</span><h3>Főcsomag</h3><p>Teljes együttműködés.</p></article><article class="card feature"><span class="icon">03</span><h3>Megtartás</h3><p>Havi támogatás.</p></article></div>
     </section>
     <section class="section" id="folyamat">
       <div class="section-head"><p class="eyebrow">Folyamat</p><h2>Így dolgozom</h2></div>
-      <ol class="steps"><li><strong>Ismerkedés</strong><span>Cél, határidő, keret.</span></li><li><strong>Ajánlat</strong><span>Írásos scope és díj.</span></li><li><strong>Megvalósítás</strong><span>Mérföldkövek, státusz.</span></li><li><strong>Átadás</strong><span>Eredmény és dokumentáció.</span></li></ol>
+      <ol class="steps"><li><strong>Ismerkedés</strong><span>Cél és keret.</span></li><li><strong>Ajánlat</strong><span>Díj és ütemezés.</span></li><li><strong>Megvalósítás</strong><span>Mérföldkövek.</span></li><li><strong>Átadás</strong><span>Eredmény.</span></li></ol>
     </section>
     <section class="section" id="eredmenyek">
       <div class="section-head"><p class="eyebrow">Eredmények</p><h2>Referenciák helye</h2></div>
       <div class="mosaic"><div class="tile t1">Ügyfél A</div><div class="tile t2">Ügyfél B</div><div class="tile t3">Ügyfél C</div><div class="tile t4">Ügyfél D</div></div>
     </section>
     <section class="section contact" id="kapcsolat">
-      <div class="section-head"><p class="eyebrow">Ajánlatkérés</p><h2>Beszéljük át a következő projektet</h2></div>
-      <form class="contact-form" id="themeForm" action="#" method="post">
-        <label>Név<input type="text" name="name" placeholder="Teljes név" /></label>
-        <label>E-mail<input type="email" name="email" placeholder="nev@ceg.hu" /></label>
-        <label>Cég / projekt<input type="text" name="company" /></label>
-        <label>Keret<input type="text" name="budget" /></label>
-        <label class="full">Miben segíthetek?<textarea name="message" rows="5"></textarea></label>
+      <div class="section-head"><p class="eyebrow">Ajánlatkérés</p><h2>Beszéljük át</h2></div>
+      <form class="contact-form" id="themeForm" action="#">
+        <label>Név<input type="text" name="name" /></label>
+        <label>E-mail<input type="email" name="email" /></label>
+        <label class="full">Üzenet<textarea name="message" rows="5"></textarea></label>
         <button type="submit" class="btn btn-primary">Ajánlatot kérek</button>
         <p class="form-note" id="formNote" hidden>Köszönöm.</p>
       </form>
