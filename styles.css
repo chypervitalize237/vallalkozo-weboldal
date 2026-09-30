@@ -5,7 +5,7 @@
   --accent: #c31274;
   --line: rgba(195, 18, 116, 0.14);
   --radius: 26px;
-  --max: 1480px;
+  --max: none;
 }
 
 *,
@@ -60,7 +60,7 @@ main,
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  padding: 1.05rem 6vw;
+  padding: 1.05rem 2.2vw;
   background: rgba(255,255,255,.72);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--line);
@@ -109,9 +109,10 @@ main,
 .hero,
 .section,
 .site-footer {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 4.6rem 5vw;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 4.4rem 2.2vw;
 }
 
 .lede,
@@ -240,9 +241,11 @@ h3 {
 .grid-2, .work-grid { grid-template-columns: 1fr 1fr; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 
-@media (min-width: 1100px) {
+@media (min-width: 800px) {
   .work-grid { grid-template-columns: repeat(4, 1fr); }
-  .work img { height: 280px; }
+  .work img { height: 300px; }
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
 }
 
 .card,
