@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kezdőlap · Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Studio · Vállalkozói weboldal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="space" aria-hidden="true">
-    <div class="land-photo" id="landPhoto">
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=3840&q=85" alt="" />
-    </div>
-    <div class="land-shade"></div>
+<div class="space" aria-hidden="true">
+  <div class="land-photo" id="landPhoto">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=3840&q=85" alt="" />
   </div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <header class="site-header">
-    <a class="logo" href="index.html"><span class="logo-mark">◆</span><span class="logo-text">Studio</span></a>
-    <nav class="nav" id="nav">
-      <a href="index.html" class="is-active">Kezdőlap</a>
-      <a href="rolam.html">Rólam</a>
-      <a href="szolgaltatasok.html">Szolgáltatások</a>
-      <a href="folyamat.html">Folyamat</a>
-      <a href="eredmenyek.html">Eredmények</a>
-      <a href="kapcsolat.html">Ajánlatkérés</a>
-    </nav>
-    <a class="btn btn-small" href="kapcsolat.html">Időpontot kérek</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Egyéni vállalkozó</p>
-      <h1>Tiszta ajánlat.<br /><em>Mérhető eredmény.</em></h1>
-      <p class="lede">Üzleti bemutatkozó oldal vállalkozóknak.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="rolam.html">Tovább: Rólam</a>
-        <a class="btn btn-ghost" href="szolgaltatasok.html">Szolgáltatások</a>
-      </div>
-    </section>
-    <nav class="page-nav"><span></span><a class="btn btn-primary" href="rolam.html">Következő lap →</a></nav>
-  </main>
-  <footer class="site-footer"><p>© <span id="year"></span> Studio</p></footer>
-  <script src="script.js"></script>
+  <div class="land-shade"></div>
+</div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="site-header">
+  <a class="logo" href="index.html"><span class="logo-mark">◆</span><span class="logo-text">Studio</span></a>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="is-active">Kezdőlap</a>
+    <a href="rolam.html">Rólam</a>
+    <a href="szolgaltatasok.html">Szolgáltatások</a>
+    <a href="folyamat.html">Folyamat</a>
+    <a href="eredmenyek.html">Eredmények</a>
+    <a href="kapcsolat.html">Ajánlatkérés</a>
+  </nav>
+  <a class="btn btn-small" href="kapcsolat.html">Időpontot kérek</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<main>
+<section class="hero">
+  <p class="eyebrow">Egyéni vállalkozó</p>
+  <h1>Tiszta ajánlat.<br /><em>Mérhető eredmény.</em></h1>
+  <p class="lede">Üzleti bemutatkozó oldal vállalkozóknak. A név és a szakma később kerül ide.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="rolam.html">Tovább: Rólam</a>
+    <a class="btn btn-ghost" href="szolgaltatasok.html">Szolgáltatások</a>
+  </div>
+  <dl class="stats"><div><dt>Ügyfelek</dt><dd>50+</dd></div><div><dt>Év tapasztalat</dt><dd>8</dd></div><div><dt>Elégedettség</dt><dd>98%</dd></div></dl>
+</section>
+<section class="section">
+  <div class="section-head"><p class="eyebrow">Rólam</p><h2>Egy vállalkozó, aki a saját nevével áll ki</h2><p>Itt lesz a bemutatkozás. A szakmát később írjuk be.</p></div>
+  <div class="grid-2"><article class="card"><h3>Pozíció</h3><p>Tanácsadó, alkotó, szakértő vagy szolgáltató.</p></article><article class="card"><h3>Ígéret</h3><p>Világos folyamat, határidő, átlátható díjazás.</p></article></div>
+</section>
+<section class="section">
+  <div class="section-head"><p class="eyebrow">Szolgáltatások</p><h2>Három ajánlat</h2></div>
+  <div class="grid-3">
+    <article class="card feature"><span class="icon">01</span><h3>Konzultáció</h3><p>Rövid, fókuszált beszélgetés.</p></article>
+    <article class="card feature featured"><span class="icon">02</span><h3>Főcsomag</h3><p>Tervezés, kivitelezés, átadás.</p></article>
+    <article class="card feature"><span class="icon">03</span><h3>Megtartás</h3><p>Havi támogatás.</p></article>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head"><p class="eyebrow">Folyamat</p><h2>Így dolgozom</h2></div>
+  <ol class="steps"><li><strong>Ismerkedés</strong><span>Cél, határidő, keret.</span></li><li><strong>Ajánlat</strong><span>Scope és díj.</span></li><li><strong>Megvalósítás</strong><span>Mérföldkövek.</span></li><li><strong>Átadás</strong><span>Eredmény.</span></li></ol>
+</section>
+<section class="section">
+  <div class="section-head"><p class="eyebrow">Eredmények</p><h2>Referenciák helye</h2></div>
+  <div class="mosaic"><div class="tile t1">Ügyfél A</div><div class="tile t2">Ügyfél B</div><div class="tile t3">Ügyfél C</div><div class="tile t4">Ügyfél D</div></div>
+</section>
+<section class="section contact">
+  <div class="section-head"><p class="eyebrow">Ajánlatkérés</p><h2>Beszéljük át a következő projektet</h2></div>
+  <form class="contact-form" id="themeForm" action="#">
+    <label>Név<input type="text" name="name" /></label>
+    <label>E-mail<input type="email" name="email" /></label>
+    <label class="full">Üzenet<textarea name="message" rows="5"></textarea></label>
+    <button class="btn btn-primary" type="submit">Ajánlatot kérek</button>
+    <p class="form-note" id="formNote" hidden>Köszönöm.</p>
+  </form>
+</section>
+<nav class="page-nav"><span></span><a class="btn btn-primary" href="rolam.html">Következő lap →</a></nav>
+</main>
+<footer class="site-footer"><p>© <span id="year"></span> Studio</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
