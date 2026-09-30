@@ -8,13 +8,13 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="space"><div class="land-photo" id="landPhoto"><img src="https://images.unsplash.com/photo-1487412947147-5cebfa44831c?auto=format&fit=crop&w=2000&q=70" alt="" /></div><div class="land-shade"></div></div>
+<div class="space" aria-hidden="true"></div>
 <header class="site-header">
   <a class="logo" href="index.html"><span class="logo-mark">✦</span><span class="logo-text">Lunara</span></a>
   <nav class="nav" id="nav">
     <a href="index.html" class="is-active">Kezdőlap</a>
-    <a href="rolam.html">Rólam</a>
-    <a href="szolgaltatasok.html">Kezelések</a>
+    <a href="#rolam">Rólam</a>
+    <a href="#kezelesek">Kezelések</a>
     <a href="#clients">Vendégeim</a>
     <a href="https://foglalo-prototipus.tamasits-mor237.chatgpt.site/" target="_blank" rel="noopener">Időpont</a>
   </nav>
@@ -22,41 +22,41 @@
 </header>
 <main>
 <section class="hero">
-  <p class="eyebrow">női stúdió</p>
+  <p class="eyebrow">kedves női stúdió</p>
   <h1>Finom munka.<br /><em>Kedves kéz.</em></h1>
-  <p class="lede">Itt nem sietünk. Tiszta eszközök, nyugodt beszélgetés.</p>
+  <p class="lede">Szempillahosszabbítás és lifting nyugodt légkörben. Tiszta eszköz, ráérő beszélgetés, hozzád igazított forma.</p>
   <div class="hero-actions">
-    <a class="btn btn-primary" href="https://foglalo-prototipus.tamasits-mor237.chatgpt.site/" target="_blank" rel="noopener">Időpontot foglalok</a>
+    <a class="btn btn-primary" href="https://foglalo-prototipus.tamasits-mor237.chatgpt.site/" target="_blank" rel="noopener">Szeretnék időpontot</a>
     <a class="btn btn-ghost" href="#clients">Vendégeim</a>
   </div>
 </section>
-<section class="section">
-  <div class="section-head"><p class="eyebrow">Rólam</p><h2>Egy nő, aki figyel rád</h2></div>
+<section class="section" id="rolam">
+  <div class="section-head"><p class="eyebrow">Rólam</p><h2>Egy hölgy, aki figyel rád</h2><p>Nem siettetlek. Megkérdezem, hogyan érzed magad, és ahhoz igazítom a szettet.</p></div>
   <div class="grid-2">
-    <article class="card"><h3>Tiszta munka</h3><p>Egyszer használatos eszközök, friss ragasztó.</p></article>
-    <article class="card"><h3>Kedvesség</h3><p>Ha fáradt vagy, lassítunk.</p></article>
+    <article class="card"><h3>Tiszta munka</h3><p>Friss ragasztó, egyszer használatos kefe, rendezett tálca. Ezt látod, mielőtt lehunyod a szemed.</p></article>
+    <article class="card"><h3>Kedvesség</h3><p>Ha fáradt vagy, lassítunk. Ha a pilládnak pihenő kell, őszintén megmondom.</p></article>
   </div>
 </section>
-<section class="section">
-  <div class="section-head"><p class="eyebrow">Kezelések</p><h2>Ami hozzád illik</h2></div>
+<section class="section" id="kezelesek">
+  <div class="section-head"><p class="eyebrow">Kezelések</p><h2>Ami hozzád simul</h2></div>
   <div class="grid-3">
-    <article class="card feature"><span class="icon">01</span><h3>Klasszikus</h3><p>Finom, nappali tekintet.</p></article>
-    <article class="card feature featured"><span class="icon">02</span><h3>Volume</h3><p>Puha dúsítás.</p></article>
-    <article class="card feature"><span class="icon">03</span><h3>Lifting</h3><p>A saját pillád emelése.</p></article>
+    <article class="card feature"><span class="icon">01</span><h3>Klasszikus</h3><p>Finom, nappali tekintet. Egy szál a saját pilládra.</p></article>
+    <article class="card feature featured"><span class="icon">02</span><h3>Volume</h3><p>Puha dúsítás, nem maszk. Nőies és viselhető.</p></article>
+    <article class="card feature"><span class="icon">03</span><h3>Lifting</h3><p>A saját pillád emelése és festése. Könnyed napokra.</p></article>
   </div>
 </section>
 <section class="section clients" id="clients">
-  <div class="section-head"><p class="eyebrow">Vendégeim</p><h2>Akik már itt voltak</h2></div>
+  <div class="section-head"><p class="eyebrow">Vendégeim</p><h2>Akik már itt pihentek</h2></div>
   <div class="client-grid">
     <article class="client-card"><p class="client-quote">„Olyan finoman dolgozott, hogy elaludtam.”</p><p class="client-name">Anna</p></article>
     <article class="client-card"><p class="client-quote">„Megkérdezte, milyen napom van.”</p><p class="client-name">Eszter</p></article>
     <article class="client-card"><p class="client-quote">„Tiszta tálca, nyugodt hang.”</p><p class="client-name">Réka</p></article>
-    <article class="client-card"><p class="client-quote">„Őszintén mondta, hogy lifting kell.”</p><p class="client-name">Lili</p></article>
+    <article class="client-card"><p class="client-quote">„Őszintén mondta, hogy most lifting kell.”</p><p class="client-name">Lili</p></article>
   </div>
   <p class="clients-note">Az időpontot a foglaló oldalon választod.</p>
   <a class="btn btn-primary" href="https://foglalo-prototipus.tamasits-mor237.chatgpt.site/" target="_blank" rel="noopener">Foglalás megnyitása</a>
 </section>
 </main>
-<footer class="site-footer"><p>© <span id="year"></span> Lunara</p></footer>
+<footer class="site-footer"><p>© <span id="year"></span> Lunara · Tiszta munka, kedves kéz</p></footer>
 <script src="script.js"></script>
 </body></html>
