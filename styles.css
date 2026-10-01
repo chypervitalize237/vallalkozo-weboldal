@@ -229,7 +229,36 @@ h3 {
   background: rgba(255,255,255,.85);
 }
 
-.section-head { margin-bottom: 2rem; }
+.intro {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 1.45rem;
+  color: var(--text);
+  max-width: 34rem;
+  margin: .4rem auto 0;
+}
+
+.intro-box {
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(255,255,255,.86);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.5rem 1.4rem;
+}
+
+.intro-box p {
+  color: var(--muted);
+  margin: 0 auto .8rem;
+}
+
+.company-slot {
+  margin: .4rem 0 0;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  color: var(--accent);
+}
 
 .grid-2,
 .grid-3,
