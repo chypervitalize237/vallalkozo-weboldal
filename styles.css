@@ -1,9 +1,10 @@
 :root {
-  --bg: #fff6fa;
-  --text: #3a2032;
-  --muted: #8a5b76;
-  --accent: #c31274;
-  --line: rgba(195, 18, 116, 0.14);
+  --bg: #fffdfc;
+  --text: #5c403f;
+  --muted: #8d6a66;
+  --accent: #b76e79;
+  --gold: #e8c4b8;
+  --line: rgba(183, 110, 121, 0.22);
   --radius: 26px;
   --max: none;
 }
@@ -17,7 +18,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: "Manrope", system-ui, sans-serif;
-  background: #fff6fa;
+  background: #fff;
   color: var(--text);
   line-height: 1.8;
   letter-spacing: 0.01em;
@@ -25,29 +26,19 @@ body {
 }
 
 body::before,
-body::after {
-  content: "";
-  position: fixed;
-  z-index: 0;
-  pointer-events: none;
-  width: 240px;
-  height: 240px;
-  background:
-    radial-gradient(circle at 32% 30%, rgba(255,255,255,.95) 0 16%, transparent 17%),
-    radial-gradient(circle at 68% 42%, rgba(232,90,168,.28) 0 11%, transparent 12%),
-    radial-gradient(circle at 48% 72%, rgba(195,18,116,.12) 0 24%, transparent 25%);
-}
-body::before { top: 3.5rem; left: -1.5rem; }
-body::after { right: -1.5rem; bottom: 2rem; transform: scaleX(-1); }
+body::after { content: none; }
 
 .space {
   position: fixed;
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(circle at 12% 10%, rgba(255,182,213,.35), transparent 34%),
-    radial-gradient(circle at 90% 6%, rgba(255,230,242,.8), transparent 36%),
-    linear-gradient(180deg, #fffdfc, #ffe9f3 46%, #fff7fb);
+    linear-gradient(180deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.62) 42%, rgba(232,196,184,.55) 100%),
+    linear-gradient(90deg, rgba(255,255,255,.35), rgba(183,110,121,.18), rgba(255,255,255,.35)),
+    url("img/eszkoz-csipesz.jpg") left center / 34% 100% no-repeat,
+    url("img/eszkoz-lampa.jpg") center center / 34% 100% no-repeat,
+    url("img/eszkoz-talca.jpg") right center / 34% 100% no-repeat,
+    #fff;
 }
 
 .site-header,
@@ -281,20 +272,9 @@ h3 {
   background-position: center;
 }
 
-.tool-a {
-  background:
-    radial-gradient(circle at 70% 40%, #fff 0 8%, transparent 9%),
-    linear-gradient(160deg, #fff7fb, #f3c4dc 55%, #c31274);
-}
-.tool-b {
-  background:
-    radial-gradient(circle at 50% 35%, #fff 0 18%, transparent 19%),
-    linear-gradient(180deg, #fff, #efe6f6 40%, #d9b8e8);
-}
-.tool-c {
-  background:
-    linear-gradient(135deg, #fffafc, #ffe4f0 45%, #f7c3dc);
-}
+.tool-a { background: url("img/eszkoz-csipesz.jpg") center / cover no-repeat; }
+.tool-b { background: url("img/eszkoz-lampa.jpg") center / cover no-repeat; }
+.tool-c { background: url("img/eszkoz-talca.jpg") center / cover no-repeat; }
 
 .tool h3 { margin: .9rem 1rem .3rem; }
 .tool p { margin: 0 1rem 1.15rem; }
