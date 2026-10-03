@@ -260,6 +260,53 @@ h3 {
   color: var(--accent);
 }
 
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.tool {
+  background: rgba(255,255,255,.9);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(195,18,116,.06);
+}
+
+.tool-visual {
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tool-a {
+  background:
+    radial-gradient(circle at 70% 40%, #fff 0 8%, transparent 9%),
+    linear-gradient(160deg, #fff7fb, #f3c4dc 55%, #c31274);
+}
+.tool-b {
+  background:
+    radial-gradient(circle at 50% 35%, #fff 0 18%, transparent 19%),
+    linear-gradient(180deg, #fff, #efe6f6 40%, #d9b8e8);
+}
+.tool-c {
+  background:
+    linear-gradient(135deg, #fffafc, #ffe4f0 45%, #f7c3dc);
+}
+
+.tool h3 { margin: .9rem 1rem .3rem; }
+.tool p { margin: 0 1rem 1.15rem; }
+
+@media (max-width: 900px) {
+  .nav { display: none; }
+  .grid-2,
+  .grid-3,
+  .work-grid,
+  .tool-grid { grid-template-columns: 1fr; }
+}
+
 .grid-2,
 .grid-3,
 .work-grid {
